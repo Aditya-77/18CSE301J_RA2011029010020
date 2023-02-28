@@ -1,4 +1,4 @@
-#Poverty in India
+Poverty in India
 
 ADITYA PATHAK (RA2011029010020) January 2023
 
