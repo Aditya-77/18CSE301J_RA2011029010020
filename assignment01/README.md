@@ -1,6 +1,6 @@
 Poverty in India
 
-ADITYA PATHAK (RA2011029010020) January 2023
+ADITYA PATHAK (RA2011029010020)
 
 Introduction
 
