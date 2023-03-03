@@ -1,51 +1,120 @@
 <html>
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <style>
+      body{
+        font-family: 'Open Sans', sans-serif;
+      }
       .heading{
         color: black;
+        margin-left: 30px;
+        margin-top: 50px;
+        font-size: 30px;
+        font-weight: bolder;
        }
       a{
         text-decoration:none;
       }
       a:visited{
-      color:black;
+        color:black;
       }
       #viz1677823620184{
         overflow:visible !important;
+        width: 700;
+        height: 500;
+        tab-size: hidden;
+      }
+      #dd{
+        font-size: 20px;
+        font-weight: bold;
+        margin-left: 30px;
+        margin-top: 50px;
+      }
+      #table{
+        margin-left: 30px;
+        width: 30%;
+        padding-bottom: 20px;
+      }
+      #dd_desc{
+        margin-left: 30px;
+        padding-bottom: 20px;
+        text-align: justify;
+        width: 50%;
+      }
+      #items{
+        list-style: none;
+        margin: 0px;
+        padding: 0;
+        text-decoration: none;
+        box-sizing: border-box;
+      }
+      #items li{
+        float:left;
+        text-align: center;
+        margin-right: 20px;
+        margin-top: 15px;
+      }
+      #nav{
+        background-color: #e13e0c;
+        height: 50px;
+        width: 128%;
+      }
+      #nav a{
+        color: #fdfdfd;
+        font-size: 15px;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding-left: 15px;
+        border-radius: 5px;
+        margin-left: 20px;
+      }
+      #nav a:hover{
+        text-decoration: underline;
       }
     </style>
   </head>
   <body>
-    <a href="https://public.tableau.com/views/CrimesinIndia_16778218312300/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link"><h3 class="heading">Tableau Project</h3></a>
+    <nav id="nav">
+      <ul id="items">
+        <li><a href="assignment02/index.html">Tableau Project</a></li>
+        <li><a href="#">Python</a></li>
+        <li><a href="#">D3</a></li>
+        <li><a href="#">Gephi</a></li>
+      </ul>
+    </nav>
+
+    <a href="https://public.tableau.com/views/CrimesinIndia_16778218312300/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link"><p class="heading">Tableau Project</p></a>
     
-    <h5  id="dd">Data Description</h5>
+    <p  id="dd">Data Description</p>
     
     <img src="dd_table.png" id="table">
     <p id="dd_desc">The data used for the analysis is of crimes in different states in India from 2001 to 2013. The above table explains all of the variables in the data well. The data consists of 2,03,908 rows and above mentioned 7 fields. Also, the data does not consist of any null values.</p>
     
     <div class='tableauPlaceholder' id='viz1677823620184' style='position: relative;'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Cr&#47;CrimesinIndia_16778218312300&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='CrimesinIndia_16778218312300&#47;Dashboard1' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Cr&#47;CrimesinIndia_16778218312300&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1677823620184');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='1920px';vizElement.style.maxWidth='100%';vizElement.style.minHeight='1130px';vizElement.style.maxHeight=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='1920px';vizElement.style.maxWidth='100%';vizElement.style.minHeight='1130px';vizElement.style.maxHeight=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.minHeight='1900px';vizElement.style.maxHeight=(divElement.offsetWidth*1.77)+'px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
     
-      <h5  id="dd">Scatter Plot</h5>
+      <p  id="dd">Scatter Plot</p>
     
     <img src="scatter_plot.png" id="table">
     <p id="dd_desc">Above is a scatter plot where we have plotted Number of crimes on the Y axis and Year on the X axis. We can see that the number of crimes have increased over the years in the country. There is an exponential jump in this number from 2012 to 2013. There is a filter provided to see the relation of year with number of crime for each state.</p>
     
-    <h5  id="dd">Tree map</h5>
+    <p  id="dd">Tree map</p>
     
     <img src="tree_map.png" id="table">
     <p id="dd_desc">The tree map consists of the state and the number of crimes in each of them in a hierarchical structure  where larger the size of the rectangle more are the number of crimes committed in a state over 2001 – 2014. We can use the filter provided to select the crime type for analysis of each state.</p>
     
-    <h5  id="dd">Packed bubbles</h5>
+    <p  id="dd">Packed bubbles</p>
     
     <img src="density.png" id="table">
     <p id="dd_desc">The Circles represent the different regions such as north, central, east, north-east, west, south, Arabian sea. The size of the circle represents the region of the country with the number of crimes for each type of crime in the data. We can find in which region we have the maximum density of crime.</p>
     
-    <h5  id="dd">Crime density map</h5>
+    <p  id="dd">Crime density map</p>
     
     <img src="crime_density_map.png" id="table">
     <p id="dd_desc">It is a map of India generated using the data in tableau where we use color design principles to represent the density of a type of crime in different states. The base color used is red. Darker the color more is the number of crime in that state. In the above image we have hovered over Uttar Pradesh and it shows that UP is Ranked Number 1 for Murder. We can do this for other crimes as well as for other states.</p>
     
-    <h5  id="dd">Comparison between the 5 biggest states using bar graph</h5>
+    <p  id="dd">Comparison between the 5 biggest states using bar graph</p>
     
     <img src="bar_graph.png" id="table">
     <p id="dd_desc">Finally here we compare the crime in the 5 biggest states of India over the years 2001-2014. The horizontal bar-graph is plotted for state name on Y axis and Number of crime on the Y axis.</p>
