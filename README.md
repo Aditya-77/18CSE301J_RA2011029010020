@@ -6,4 +6,4 @@
 2. [Assignment 2][2]
 
 [1]:assignment01/
-[2]:assignment02/
+[2]:assignment02/index.html
