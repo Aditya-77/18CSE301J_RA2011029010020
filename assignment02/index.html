@@ -9,11 +9,10 @@
         margin: 0px;
       }
       .heading{
-        color: black;
-        margin-left: 30px;
-        margin-top: 50px;
-        font-size: 30px;
-        font-weight: bolder;
+        font-size: 40px;
+        font-weight: bold;
+        margin-left: 150px;
+        margin-top: 75px;
        }
       a{
         text-decoration:none;
@@ -28,21 +27,20 @@
         tab-size: hidden;
       }
       #dd{
-        font-size: 20px;
+        font-size: 25px;
         font-weight: bold;
-        margin-left: 30px;
-        margin-top: 50px;
+        margin-left: 150px;
+        margin-top: 75px;
       }
       #table{
-        margin-left: 30px;
+        padding-top: 20px;
         width: 30%;
-        padding-bottom: 20px;
+        margin-left: 150px;
       }
       #dd_desc{
-        margin-left: 30px;
-        padding-bottom: 20px;
         text-align: justify;
-        width: 80%;
+        width: 60%;
+        margin-left: 150px;
       }
       #items{
         list-style: none;
@@ -80,21 +78,23 @@
     <nav id="nav">
       <ul id="items">
         <li><a href="assignment02/index.html">Tableau Project</a></li>
-        <li><a href="#">Python</a></li>
-        <li><a href="#">D3</a></li>
-        <li><a href="#">Gephi</a></li>
+        <li><a href="assignment02/python.html">Python</a></li>
+        <li><a href="assignment02/d3.html">D3</a></li>
+        <li><a href="assignment02/gephi.html">Gephi</a></li>
+        <li><a href="assignment02/conclusion.html">Conclusion</a></li>
       </ul>
     </nav>
-    <center>
+    
     <a href="https://public.tableau.com/views/CrimesinIndia_16778218312300/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link"><p class="heading">Tableau Project</p></a>
     
     <p  id="dd">Data Description</p>
     
     <img src="dd_table.png" id="table">
-    <p id="dd_desc">The data used for the analysis is of crimes in different states in India from 2001 to 2013. The above table explains all of the variables in the data well. The data consists of 2,03,908 rows and above mentioned 7 fields. Also, the data does not consist of any null values.</p>
-  </center>
+    <p id="dd_desc">The data used for the analysis is of crimes in different states in India from 2001 to 2013. 
+      The above table explains all of the variables in the data well. The data consists of 2,03,908 rows and above mentioned 7 fields.</p>
+  
     <div class='tableauPlaceholder' id='viz1677823620184' style='position: relative;'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Cr&#47;CrimesinIndia_16778218312300&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='CrimesinIndia_16778218312300&#47;Dashboard1' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Cr&#47;CrimesinIndia_16778218312300&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1677823620184');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='1920px';vizElement.style.maxWidth='100%';vizElement.style.minHeight='1130px';vizElement.style.maxHeight=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='1920px';vizElement.style.maxWidth='100%';vizElement.style.minHeight='1130px';vizElement.style.maxHeight=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.minHeight='1900px';vizElement.style.maxHeight=(divElement.offsetWidth*1.77)+'px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-    <center>
+    
       <p  id="dd">Scatter Plot</p>
     
     <img src="scatter_plot.png" id="table">
@@ -120,6 +120,6 @@
     <img src="bar_graph.png" id="table">
     <p id="dd_desc">Finally here we compare the crime in the 5 biggest states of India over the years 2001-2014. The horizontal bar-graph is plotted for state name on Y axis and Number of crime on the Y axis.</p>
     
-  </center>
+
   </body>
 </html>
