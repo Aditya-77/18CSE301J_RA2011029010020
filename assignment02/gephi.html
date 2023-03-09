@@ -1,0 +1,127 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+      body{
+        font-family: 'Open Sans', sans-serif;
+        margin: 0px;
+      }
+     
+      #items{
+        list-style: none;
+        margin: 0px;
+        padding: 0;
+        text-decoration: none;
+        box-sizing: border-box;
+      }
+      #items li{
+        float:left;
+        text-align: center;
+        margin-right: 20px;
+        margin-top: 15px;
+      }
+      #nav{
+        background-color: #e13e0c;
+        height: 50px;
+        width: 100%;
+      }
+      #nav a{
+        color: #fdfdfd;
+        font-size: 15px;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding-left: 15px;
+        border-radius: 5px;
+        margin-left: 20px;
+      }
+      #nav a:hover{
+        text-decoration: underline;
+      }
+      #heading{
+        font-size: 40px;
+        font-weight: bold;
+        margin-left: 150px;
+        margin-top: 75px;
+      }
+      #sub-heading{
+        font-size: 25px;
+        font-weight: bold;
+        margin-left: 150px;
+        margin-top: 75px;
+      }
+      #desc{
+        text-align: justify;
+        width: 60%;
+        margin-left: 150px;
+      }
+      img{
+        padding-top: 20px;
+        width: 50%;
+        margin-left: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="nav">
+      <ul id="items">
+        <li><a href="assignment02/index.html">Tableau Project</a></li>
+        <li><a href="assignment02/python.html">Python</a></li>
+        <li><a href="assignment02/d3.html">D3</a></li>
+        <li><a href="assignment02/gephi.html">Gephi</a></li>
+        <li><a href="assignment02/conclusion.html">Conclusion</a></li>
+      </ul>
+    </nav>
+    <p id="heading">Network Visualization</p>
+    <p id="sub-heading">Software</p>
+    <p id="desc">
+        Gephi is the software used for the visualization of network. It will help 
+        us to reveal patterns in the network that is created using the data set.
+    </p>
+    
+    <p id="sub-heading">Data</p>
+    <p id="desc">The data-set being used is Les Miserables which is a coappearance weighted network of characters
+        in the novel Les Miserables. The Network is in .gexf file format. It holds data about the link between
+        two characters that appeared on the same page or paragraph in the Novel.
+
+        <p id="desc">It consists of 74 nodes and 248 edges,i.e, 74 characters linked by 248 links.
+            The graph is undirected.
+        </p>
+    </p>
+
+    <p id="sub-heading">Initial Overview</p>
+    <p id="desc">
+        The network is initally loaded as below in Gephi, it needs a lot of processing to understand/retrive any
+        information from it which is explained ahead.
+     </p>
+     <img src="initial_overview.png">
+    
+    <p id="sub-heading">Processing the Network</p>
+     <p id="desc">
+        
+            We change the layout to force atlas 2, it helps in bring nodes which are connected together therefore helping 
+                us detect community of nodes. The pink color is of male character and green is for female characters that are on
+                the same page in the book.      
+        </p>
+        <img src="layout.png">  
+     
+    <p id="sub-heading">Final Network</p>
+    <p id="desc">
+            After making changes in the Preview panel we obtain a network as shown below. We can now
+            easily see different clusters of characters which are together on the same page.
+    </p> 
+    <img src="final.png" >
+        
+
+        <p id="sub-heading">References</p>
+        <p id="desc">
+            <ol id="desc">
+                <li ><a href="https://mdl.library.utoronto.ca/technology/tutorials/visualizing-network-dataset-using-gephi">University of Toronto tutorial</a></li>
+                <li ><a href="https://ubc-library-rc.github.io/gephi-palladio/content/05_Gephi_hands_on_activity.htmli">UBC Library</a></li>
+                <li ><a href="https://www.youtube.com/watch?v=GXtbL8avpik&ab_channel=MartinGrandjean">Youtube Link</a></li>
+                
+        </p>
+        
+  </body>
+</html>

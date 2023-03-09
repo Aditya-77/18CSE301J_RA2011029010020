@@ -1,0 +1,128 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+      body{
+        font-family: 'Open Sans', sans-serif;
+        margin: 0px;
+      }
+     
+      #items{
+        list-style: none;
+        margin: 0px;
+        padding: 0;
+        text-decoration: none;
+        box-sizing: border-box;
+      }
+      #items li{
+        float:left;
+        text-align: center;
+        margin-right: 20px;
+        margin-top: 15px;
+      }
+      #nav{
+        background-color: #e13e0c;
+        height: 50px;
+        width: 100%;
+      }
+      #nav a{
+        color: #fdfdfd;
+        font-size: 15px;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding-left: 15px;
+        border-radius: 5px;
+        margin-left: 20px;
+      }
+      #nav a:hover{
+        text-decoration: underline;
+      }
+      #heading{
+        font-size: 40px;
+        font-weight: bold;
+        margin-left: 150px;
+        margin-top: 75px;
+      }
+      #sub-heading{
+        font-size: 25px;
+        font-weight: bold;
+        margin-left: 150px;
+        margin-top: 75px;
+      }
+      #desc{
+        text-align: justify;
+        width: 60%;
+        margin-left: 150px;
+      }
+      iframe{
+        margin-left: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="nav">
+      <ul id="items">
+        <li><a href="assignment02/index.html">Tableau Project</a></li>
+        <li><a href="assignment02/python.html">Python</a></li>
+        <li><a href="assignment02/d3.html">D3</a></li>
+        <li><a href="assignment02/gephi.html">Gephi</a></li>
+        <li><a href="assignment02/conclusion.html">Conclusion</a></li>
+      </ul>
+    </nav>
+
+    <p id="heading">Data Visualization using d3.js</p>
+    <p id="sub-heading">Platform</p>
+    <p id="desc">For visualization of data using d3.js we use Observablehq, a notebook
+        which allows us to write javascript code without having to write html and 
+        it's inbuilt functions help in exploiting the d3.js library with ease and create interactive, 
+        animated graphs to visualize the data.
+
+        <p id="desc">The tutorials on the website are also used as reference for the below visualization.</p>
+    </p>
+    
+    <p id="sub-heading">Data</p>
+    <p id="desc">The data-set being used is of crime in India from 2001 - 2014, it is the same data-set which is used for tableau.
+        Its data description is given on the home page.</p>
+
+    <p id="sub-heading">Code</p>
+    <p id="desc">The code for the visualization is available at <a href="https://observablehq.com/@adityapathak/numberofcrimes_for_all_state">Observable HQ</a>
+                The entire code is also uploaded in the github repository in the folder <a href="">Assignment 2</a>.
+                The main components of the javascript code are embedded below (Note: This only shows the output of the main 
+                code components, the enitre code is available in the notebook link above):
+     </p>
+     <iframe width="60%" height="473" frameborder="0"
+  src="https://observablehq.com/embed/@adityapathak/numberofcrimes_for_all_state@latest?cells=data%2Cnames%2Cyear%2Cyearvalues%2Crank%2Ckeyframes%2Cnameframes%2Cprev%2Cnext"></iframe>
+    
+    
+        <p id="sub-heading">Inference</p>
+        <p id="desc">The output of visualization using d3.js is given below:</p>
+            
+            <iframe width="60%" height="725" frameborder="0"
+  src="https://observablehq.com/embed/@adityapathak/numberofcrimes_for_all_state@latest?cells=viewof+replay%2Cchart"></iframe>
+        <p id="desc">
+            The visualization is a racing bar-chart created using d3 where we have number of crimes on the x axis,
+            each of the bar has the name of the state and the total crimes in each state (displaying only top 12) in a particular year. There is also 
+            a time stamp at the bottom which display's the year. The length of bars is according to the number of crimes.
+
+            The replay button can be used to see the animation again.
+
+        </p>
+    
+        
+
+        <p id="sub-heading">References</p>
+        <p id="desc">
+            <ol id="desc">
+                <li><a href="https://observablehq.com/@d3/bar-chart-race-explained">Observablehq racing bar chart explained</a></li>
+                <li><a href="https://github.com/d3/d3/wiki">D3 documentation</a></li>
+                <li><a href="https://d3-graph-gallery.com/index.html">D3 graph Gallery</a></li>
+                <li><a href="https://stackoverflow.com/questions/40206410/d3-on-how-to-sum-values">Stackoverflow</a></li>
+                <li><a href="https://feliperego.github.io/blog/2020/08/21/Bar-Chart-Race-D3js-COVID19-Global-Cases">Covid 19 Bar chart race</a></li>
+            </ol>
+        </p>
+        
+
+  </body>
+</html>

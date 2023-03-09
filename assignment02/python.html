@@ -1,0 +1,170 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+      body{
+        font-family: 'Open Sans', sans-serif;
+        margin: 0px;
+      }
+     
+      #items{
+        list-style: none;
+        margin: 0px;
+        padding: 0;
+        text-decoration: none;
+        box-sizing: border-box;
+      }
+      #items li{
+        float:left;
+        text-align: center;
+        margin-right: 20px;
+        margin-top: 15px;
+      }
+      #nav{
+        background-color: #e13e0c;
+        height: 50px;
+        width: 100%;
+      }
+      #nav a{
+        color: #fdfdfd;
+        font-size: 15px;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding-left: 15px;
+        border-radius: 5px;
+        margin-left: 20px;
+      }
+      #nav a:hover{
+        text-decoration: underline;
+      }
+      #heading{
+        font-size: 40px;
+        font-weight: bold;
+        margin-left: 150px;
+        margin-top: 75px;
+      }
+      #sub-heading{
+        font-size: 25px;
+        font-weight: bold;
+        margin-left: 150px;
+        margin-top: 75px;
+      }
+      #desc{
+        text-align: justify;
+        width: 60%;
+        margin-left: 150px;
+      }
+      img{
+        padding-top: 20px;
+        width: 50%;
+        margin-left: 150px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <nav id="nav">
+      <ul id="items">
+        <li><a href="assignment02/index.html">Tableau Project</a></li>
+        <li><a href="assignment02/python.html">Python</a></li>
+        <li><a href="assignment02/d3.html">D3</a></li>
+        <li><a href="assignment02/gephi.html">Gephi</a></li>
+        <li><a href="assignment02/conclusion.html">Conclusion</a></li>
+      </ul>
+    </nav>
+
+    <p id="heading">Text Visualization</p>
+    <p id="sub-heading">Package</p>
+    <p id="desc"> For text visualization we have used matplotlib, wordcloud, numpy
+        using them will create word clouds for text analysis.</p>
+    
+    <p id="sub-heading">Data</p>
+    <p id="desc">The data being used for the analysis consists of speeches of PM Narendra Modi 
+        and ex PM Manmohan Singh. These speeches were given on 15th August and are 10 years 
+        apart,i.e, PM Modi's speech is from 2022 and the other speech is from 2012.</p>
+    
+    <p id="sub-heading">Data Source</p>
+    <p id="desc"> Both the speeches are stored in .txt format with their source being: 
+        <a href="https://www.timesnownews.com/india/full-text-of-pm-modis-independence-day-speech-2022-article-93572730">PM Modi speech</a>
+        <a href="https://www.thehindu.com/news/national/prime-ministers-independence-day-speech-august-15-2012/article3774546.ece">ex PM Manmohan Singh speech</a>
+    </p>
+
+    <p id="sub-heading">Code</p>
+    <p id="desc">The code is available in .ipynb format and is available at: <a href="https://colab.research.google.com/drive/16leKU8ZE7RW3fvZ53hGGK05VEZhG0kve?usp=sharing">Google Colab link</a>
+      <div>
+        <script src="https://gist.github.com/Aditya-77/854c480cf1b12a7b8f6f093b78e2a4dc.js"></script></p>
+      </div>
+    
+        <p id="sub-heading">Inference</p>
+        <p id="desc">The output of the analysis is given below, the first image is the output of Manmohan Singh's speech:</p>
+          <img src="singh_output.png">
+          <img  src="modi_output.png">
+        <p id="desc">
+          We can see that the speech of Manmohan Singh talks about introducing new schemes and focusing on development, security, work,and villages etc.
+          On the other hand Narendra Modi talks about new resolution, one nation , looking forward, remembering the country's old heritage and talks more about the countries potential. 
+        </p>
+    
+        <p id="heading">Data Visualization using Python</p>
+        <p id="sub-heading">Package</p>
+        <p id="desc">We will be using pandas, matplotlib, seaborn for the analysis of the data.</p>
+
+        <p id="sub-heading">Data</p>
+        <p id="desc">The data-set being used is of crime in India from 2001 - 2014, it is the same data-set which is used for tableau.
+            Its data description is given on the home page.
+        </p>
+        
+        <p id="sub-heading">Code and Output</p>
+        <p id="desc">The code is available in .ipynb format and is available at: <a href="https://colab.research.google.com/drive/1NA8-OaOXwt3Qj5ro8dZnYVHv7-yORdM1?usp=sharing">Google Colab link</a>
+                    and <a href="https://colab.research.google.com/drive/1kxsN5YmbIoTHlPZJym-wNisI2-yvQmfX?usp=sharing">Google Colab link 2</a>
+                    <div>
+                        <script id="gist" src="https://gist.github.com/Aditya-77/8d64200f373d53552c5997537c6b642a.js"></script>
+                        <script id="gist" src="https://gist.github.com/Aditya-77/a30dd2f9effb2af7c2925da68d5cfb01.js"></script>           
+                      </div>
+                      </p>
+
+        <p id="sub-heading">Inference</p>
+        <p id="desc">In the above embeded code we can also see the output of the programs. In total we have created 6 graphs using python for the dataset.Each of the output 
+            is explained below in order of output generation:
+            <ol>
+                <li id="desc"><b>Number of Crimes by Crime Type</b></li>
+                <p id="desc">It is a plot of Number of crimes on the Y axis vs Year on the X axis.
+                    The legend shows the crime type using different colors.
+                </p>
+                <li id="desc"><b>Breakdown of Crimes by Type in Maharashtra</b></li>
+                <p id="desc">The chart is plotted between Year on the X axis and Number of crimes on the Y axis. The chart shows
+                    the different types of crimes taking place Maharashtra over 2001-2014.
+                </p>
+                <li id="desc"><b>Number of Crimes by State and Year</b></li>
+                <p id="desc">It is a heatmap of state vs year with the legend showing the gradient for number of crimes on the right.</p>
+                <li id="desc"><b>Number of Crimes by Year</b></li>
+                <p id="desc">Here we have the Number of crimes on the Y axis and Year on the X axis.The visualization is done using 
+                    scatter plot.
+                </p>
+                <li id="desc"><b>Total Number of Crimes by Year</b></li>
+                <p id="desc">Here we have the Number of crimes on the Y axis and Year on the X axis.The visualization is done using 
+                    line chart with a marker.
+                </p>
+                <li id="desc"><b>Total Number of Crimes by State</b></li>
+                <p id="desc">Here we have the Number of crimes on the Y axis and state on the X axis.The year is represented using legend on the right.
+                </p>
+                </ol>
+        </p>
+
+        <p id="sub-heading">References</p>
+        <p id="desc">
+            <ol id="desc" >
+                <li><a href="https://amueller.github.io/word_cloud/#">Word Cloud Documentation</a></li>
+                <li><a href="https://www.tutorialspoint.com/create-word-cloud-using-python">Tutorial Point</a></li>
+                <li><a href="https://youtu.be/HcKUU5nNmrs">Youtube link for word cloud</a></li>
+                <li><a href="https://seaborn.pydata.org/tutorial.html">Seaborn Documentation</a></li>
+                <li><a href="https://github.com/rojaAchary/Data-Visualization-with-Python/tree/main/Seaborn_Visz"> Roja Achary github reference</a></li>
+                <li><a href="https://jakevdp.github.io/PythonDataScienceHandbook/04.14-visualization-with-seaborn.html">Jake github reference</a></li>
+                <li><a href="https://github.com/milaan9/12_Python_Seaborn_Module">Milaan github reference</a></li>
+            </ol>
+        </p>
+        
+
+  </body>
+</html>

@@ -1,0 +1,93 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+      body{
+        font-family: 'Open Sans', sans-serif;
+        margin: 0px;
+      }
+     
+      #items{
+        list-style: none;
+        margin: 0px;
+        padding: 0;
+        text-decoration: none;
+        box-sizing: border-box;
+      }
+      #items li{
+        float:left;
+        text-align: center;
+        margin-right: 20px;
+        margin-top: 15px;
+      }
+      #nav{
+        background-color: #e13e0c;
+        height: 50px;
+        width: 100%;
+      }
+      #nav a{
+        color: #fdfdfd;
+        font-size: 15px;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding-left: 15px;
+        border-radius: 5px;
+        margin-left: 20px;
+      }
+      #nav a:hover{
+        text-decoration: underline;
+      }
+      #heading{
+        font-size: 40px;
+        font-weight: bold;
+        margin-left: 150px;
+        margin-top: 75px;
+      }
+      #desc{
+        text-align: justify;
+        width: 60%;
+        margin-left: 150px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <nav id="nav">
+      <ul id="items">
+        <li><a href="assignment02/index.html">Tableau Project</a></li>
+        <li><a href="assignment02/python.html">Python</a></li>
+        <li><a href="assignment02/d3.html">D3</a></li>
+        <li><a href="assignment02/gephi.html">Gephi</a></li>
+        <li><a href="assignment02/conclusion.html">Conclusion</a></li>
+      </ul>
+    </nav>
+
+    <p id="heading">Conclusion</p>
+    <p id="desc">
+        In this assignment, we were supposed to use tableau, python, d3, and gephi to create various visualization 
+        by operating on any dataset of our choice. The dataset used for tableau, python(data visualization), and d3 
+        is the same to show the differences in the method/ process of visualization and also to understand the difficulty 
+        in using GUI and programming for visualization.
+
+        <p id="desc">Therefore after going through all the visualization we can conclude that Tableau gives us a lot of visualization
+             options that only require us to place rows and columns from our data in the GUI and we get the results. On the 
+             other hand, doing the same in python and d3 requires a lot of programming fluency. Creating a simple bar graph 
+             requires us to first check if the data set includes any NULL values or not which were removed just by a click of 
+             a button in Tableau. 
+        </p>
+
+        <p id="desc"> Now comparing the two programming languages conclusion can be made that d3 is challenging as it requires a good
+             understanding of objects and selection of objects in javascript whereas python code can be understood much more easily. 
+             However, d3 is much superior in creating more interactive visualization which is more straightforward.</p>
+
+        <p id="desc">Finally, Gephi is a great tool for Network visualization but the most challenging part of using Gephi is data collection 
+            in the correct format. eg: If data is collected using the API of any social media website it will require some processing 
+            in python to convert it to .gexf. It includes converting the data structure to nodes and edges format.
+        </p>
+    </p>
+  
+
+  </body>
+</html>
