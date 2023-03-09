@@ -1,5 +1,8 @@
 # 18CSE301J_RA2011029010020
 ---
+#### Name: Aditya Pathak
+#### Reg_No: RA2011029010020
+
 ## Assignments done in this repository :
 
 1. [Assignment 1][1]
