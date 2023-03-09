@@ -1,0 +1,14 @@
+{
+  "name": "@adityapathak/numberofcrimes_for_all_state",
+  "main": "6317a1e0480efdd5@180.js",
+  "version": "180.0.0",
+  "homepage": "https://observablehq.com/@adityapathak/numberofcrimes_for_all_state",
+  "author": {
+    "name": "Aditya Pathak",
+    "url": "https://observablehq.com/@adityapathak"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4 - 5"
+  }
+}
